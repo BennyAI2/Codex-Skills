@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/codex-skills-bot.png" alt="Codex Skills robot mascot" width="300">
+</p>
+
 # Codex Skills
 
 A small collection of reusable custom skills for Codex. Each folder in [`Skills/`](Skills/) contains one skill and its `SKILL.md` instructions.
