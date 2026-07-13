@@ -1,0 +1,4 @@
+interface:
+  display_name: "Debug Loop Recovery"
+  short_description: "Break stalled debugging loops with evidence"
+  default_prompt: "Use $debug-loop-recovery to recover from a stalled debugging loop."

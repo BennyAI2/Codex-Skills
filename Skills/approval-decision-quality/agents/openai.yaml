@@ -1,0 +1,4 @@
+interface:
+  display_name: "Approval Decision Quality"
+  short_description: "Ask only when options truly differ"
+  default_prompt: "Use $approval-decision-quality to decide whether a user choice is genuinely needed."
