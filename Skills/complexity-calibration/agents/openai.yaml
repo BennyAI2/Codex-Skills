@@ -1,0 +1,4 @@
+interface:
+  display_name: "Complexity Calibration"
+  short_description: "Scale engineering effort to task complexity"
+  default_prompt: "Use $complexity-calibration to assess the required engineering rigor and model fit before starting this task."
