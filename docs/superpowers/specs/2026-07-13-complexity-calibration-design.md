@@ -12,7 +12,7 @@ The skill applies before implementation, debugging, refactoring, and planning wo
 - the proportionate level of investigation, planning, testing, and review; and
 - fit between the task and the currently selected model.
 
-It does not select, compare, or redesign technical solutions and architectures. Existing solution-selection skills remain responsible for that decision.
+It does not select, compare, or redesign technical solutions and architectures. Existing solution-selection skills, or a user-selected option, remain responsible for that decision.
 
 ## Behavior
 
