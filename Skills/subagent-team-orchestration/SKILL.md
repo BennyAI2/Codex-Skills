@@ -38,6 +38,17 @@ Route relevant findings between specialists promptly, either through direct agen
 
 Keep coordination active: sequence dependent work, reconcile conflicting recommendations, verify integrated results, and give the user coherent project-level updates rather than a set of disconnected agent reports.
 
+## Preserve a Git record
+
+When the project directory is a Git repository, make the team’s work understandable from Git as well as from chat:
+
+1. Inspect the repository status before work and preserve unrelated user changes.
+2. Maintain a clear record of completed work with focused commits, meaningful commit messages, and appropriate branches or pull requests when the project workflow uses them.
+3. Ensure commits identify the user-visible change and, when useful, the specialist role or workstream that produced it. Do not bundle unrelated work into one commit.
+4. Include relevant verification results in the commit, pull request, or coordinator handoff so the user can trace what changed and how it was checked.
+
+The coordinator owns this record. Do not stage, commit, push, or rewrite unrelated changes, and do not publish externally without the user’s authorization.
+
 ## Add a specialist only with approval
 
 When a later need falls materially outside the approved team’s expertise, pause before adding anyone. Explain:
