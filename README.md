@@ -15,3 +15,4 @@ A small collection of reusable custom skills for Codex. Each folder in [`Skills/
 | [`complexity-calibration`](Skills/complexity-calibration/SKILL.md) | Calibrates engineering effort and model fit before task execution. |
 | [`debug-loop-recovery`](Skills/debug-loop-recovery/SKILL.md) | Breaks unproductive debugging loops with an evidence ledger, focused research, and a deliberately testable next fix. |
 | [`subagent-team-orchestration`](Skills/subagent-team-orchestration/SKILL.md) | Forms and coordinates an approved, fixed team of specialist subagents for multi-part project work. |
+| [`visual-plan`](Skills/visual-plan/SKILL.md) | Turns complex or review-sensitive work into a native visual implementation plan using focused diagrams and impact maps. |

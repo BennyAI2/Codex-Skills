@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Plan"
+  short_description: "Create reviewable visual implementation plans"
+  default_prompt: "Use $visual-plan to turn this complex change into a reviewable visual plan before implementation."
