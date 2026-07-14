@@ -1,0 +1,4 @@
+interface:
+  display_name: "Subagent Team Orchestration"
+  short_description: "Coordinate durable specialist agent teams"
+  default_prompt: "Use $subagent-team-orchestration to plan an approved specialist agent team for this project."
