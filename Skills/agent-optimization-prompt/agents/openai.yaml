@@ -1,0 +1,4 @@
+interface:
+  display_name: "Agent Optimization Prompt"
+  short_description: "Modernize concise agent prompts"
+  default_prompt: "Use $agent-optimization-prompt to audit and improve this agent prompt while preserving its intent."
