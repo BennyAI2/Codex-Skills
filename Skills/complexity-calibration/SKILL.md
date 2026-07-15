@@ -1,6 +1,6 @@
 ---
 name: complexity-calibration
-description: Assess the proportionate engineering rigor, expertise, and model capability before starting a user task. Use as the initial reflection phase for implementation, debugging, refactoring, planning, and other execution work to prevent overengineering and unnecessary model cost. Stay silent when the current model fits; before acting, ask the user to switch only when another available model is materially better suited.
+description: Assess the proportionate engineering rigor, execution mode, expertise, and model capability before starting a user task. Use as the initial routing decision before drafting a plan or offering execution options for implementation, debugging, refactoring, planning, and other execution work. Prevent overengineering, unnecessary agent coordination, and unnecessary model cost; ask about a model switch only when another available model is materially better suited.
 ---
 
 # Complexity Calibration
@@ -26,6 +26,26 @@ Classify the required engineering effort:
 
 Do not add process merely because a task sounds important. Do not reduce safeguards required by risk.
 
+## Choose execution mode before planning
+
+Make the execution decision immediately after calibration and before drafting a plan, proposing agents, or asking how to proceed.
+
+- **Inline execution:** Default to one focused agent when the work is bounded, one coherent workstream can inspect, change, and verify it, and coordination would add more cost than confidence.
+- **Subagent team:** Recommend a fixed specialist team only when distinct, independently valuable workstreams or specialist expertise outweigh the coordination cost. If the user has not selected team work, ask only for the authority needed to form that team; do not present it as an equal alternative to a clearly better inline path.
+
+Treat execution mode as a costed delivery decision, not a technical solution choice. Apply `approval-decision-quality`: state and use a dominant route with its rationale; ask only when the execution trade-offs are genuinely comparable or the user must authorize the team.
+
+## State a useful execution profile
+
+When calibration materially affects time, cost, reliability, execution mode, model/reasoning level, or the user asks for that assessment, state a short recommendation before the implementation plan:
+
+- complexity level and the dominant reason;
+- recommended execution mode and why it is proportionate;
+- bounded verification approach; and
+- model/reasoning recommendation when a meaningful, available alternative exists.
+
+Do not defer a material execution or model recommendation until the user asks. Keep this profile silent when the current mode and model are plainly sufficient and no material saving or reliability difference exists.
+
 ## Set a verification budget
 
 Before implementation, define the smallest evidence needed to show the requested outcome is complete. For each acceptance criterion, name one primary check and, in team work, one owner.
@@ -40,7 +60,7 @@ Judge only the engineering rigor and model capability needed to carry out the ta
 
 ## Check Model Fit
 
-Compare the required effort with the currently selected model only after calibration:
+Compare the required effort with the currently selected model after calibration and execution routing:
 
 1. Continue without mentioning models when the current model is sufficient.
 2. Recommend a lighter available model only when the work is routine and the expected saving is material without reducing reliability.
