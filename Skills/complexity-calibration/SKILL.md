@@ -26,6 +26,14 @@ Classify the required engineering effort:
 
 Do not add process merely because a task sounds important. Do not reduce safeguards required by risk.
 
+## Set a verification budget
+
+Before implementation, define the smallest evidence needed to show the requested outcome is complete. For each acceptance criterion, name one primary check and, in team work, one owner.
+
+Run the least costly check that can establish the criterion. When that evidence passes, treat the criterion as closed. Re-run or broaden verification only when a relevant code, configuration, scope, environment, or dependency change invalidates the evidence, or when the result exposes a concrete new risk.
+
+Do not repeat independent checks merely for reassurance, and do not turn every uncertainty into a second investigation. Re-anchor work to the requested outcome after each material result; stop when the agreed acceptance evidence is complete.
+
 ## Keep Solution Choice Out of Scope
 
 Judge only the engineering rigor and model capability needed to carry out the task. Do not select, compare, or redesign technical solutions or architectures. Respect the user's selected option and any solution-selection skill as the authority for that decision.

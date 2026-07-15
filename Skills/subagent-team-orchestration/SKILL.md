@@ -26,6 +26,12 @@ Use a concise proposal such as:
 
 Adapt the roles to the project; do not propose generic roles that have no concrete responsibility. Prefer fewer agents with complementary ownership over a large roster or one agent per ticket.
 
+## Anchor the goal and verification
+
+Before implementation, state the user-visible goal, definition of done, and a small verification matrix. Assign each acceptance criterion one primary owner and one primary check. Implementation roles verify their scoped work; assign integration verification to one approved role rather than asking every agent to repeat it.
+
+Require handoffs to report only the outcome, evidence, affected interfaces, and one next action. The coordinator closes a criterion once its assigned evidence passes. Reopen it only when a relevant change or new evidence invalidates that result.
+
 ## Coordinate the approved team
 
 After approval, create only the approved roles. Maintain a shared, current view of:
@@ -37,6 +43,8 @@ After approval, create only the approved roles. Maintain a shared, current view 
 Route relevant findings between specialists promptly, either through direct agent messages or the coordinator. Ask agents to report changes that affect another role before that work is integrated. Reassign work inside the approved team when its existing expertise covers it; do not create a new agent merely because the next task is different.
 
 Keep coordination active: sequence dependent work, reconcile conflicting recommendations, verify integrated results, and give the user coherent project-level updates rather than a set of disconnected agent reports.
+
+At each material handoff, re-state the goal, completed acceptance evidence, and the single next action that advances the goal. Stop or redirect work that no longer serves an open acceptance criterion. Do not create parallel self-review, re-testing, or research loops without a concrete new discriminator, failed check, or changed dependency.
 
 ## Preserve a Git record
 
@@ -66,3 +74,4 @@ Ask for the user’s approval, then add the specialist only after approval. If t
 - Do not treat user approval of subagent-driven work as approval for external, irreversible, or scope-expanding actions.
 - Do not let specialist agents independently expand the team without coordinator and user approval.
 - Keep the team roster and responsibilities visible in substantive project updates when they change.
+- Do not use more verification than the agreed acceptance criteria require; the coordinator decides when the evidence is sufficient to close the work.

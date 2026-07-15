@@ -46,13 +46,15 @@ Use live mode only when the user asks for a live plan dashboard or the project n
    - **Stale:** the watcher heartbeat or project signal is older than the page's freshness threshold; show the age and do not imply progress.
 5. Do not infer active work merely because the watcher process is still running. Preserve a last-known state when the watcher stops, then let the page mark it stale.
 
+Treat the dashboard as an observer, not a task generator. Update it for material status transitions and accepted verification outcomes, not for each retry or routine check. A live signal must not trigger additional research, review, or verification unless it exposes a concrete changed condition.
+
 Use a generated, ignored runtime-status file when the plan page is versioned; keep its schema limited to status metadata, timestamps, non-sensitive summaries, and optional aggregate Git state. Do not put secrets, private file contents, credentials, or raw logs in the status data.
 
 ## Present and continue
 
 Present the plan in the current task by default. Create a local HTML plan page when the user asks for one, or when an ongoing multi-stage project needs a maintained visual review surface. Follow the project's plan-file convention; if none exists, propose an appropriate local path before adding one. Do not host or share the page unless the user authorizes it.
 
-For a maintained page, update it after every material scope decision, completed milestone, integration result, verification finding, or blocker. Keep the current state, next milestone, open decisions, and evidence links accurate so it remains useful to the user and the approved team throughout the project. In live mode, the coordinator or approved visual-plan steward also records meaningful handoffs and status transitions for the watcher to surface.
+For a maintained page, update it after every material scope decision, completed milestone, integration result, accepted verification outcome, or blocker. Keep the current state, next milestone, open decisions, and evidence links accurate so it remains useful to the user and the approved team throughout the project. In live mode, the coordinator or approved visual-plan steward also records meaningful handoffs and status transitions for the watcher to surface.
 
 When the plan exposes a real approval boundary, ask for the specific decision and wait. Otherwise state the plan, proceed with the authorized work, and keep the plan current if scope materially changes.
 
