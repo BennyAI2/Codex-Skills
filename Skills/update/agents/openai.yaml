@@ -1,0 +1,7 @@
+interface:
+  display_name: "Update"
+  short_description: "Check project health and correct drift"
+  default_prompt: "Use $update to assess this project's current progress, health, and next action."
+
+policy:
+  allow_implicit_invocation: false
